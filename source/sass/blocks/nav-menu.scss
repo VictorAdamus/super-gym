@@ -1,0 +1,106 @@
+.nav-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 440px;
+  padding-top: 2px;
+  margin-left: 31px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @include vp-tablet {
+    padding-top: 0;
+    padding-left: 42px;
+    margin-left: 0;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    flex-flow: row wrap;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include vp-tablet {
+    padding: 0;
+    padding-top: 2px;
+  }
+}
+
+.nav-menu__item {
+  margin-left: 40px;
+  margin-bottom: 10px;
+
+  &:first-child,
+  &:nth-child(2) {
+    margin-left: 0;
+  }
+
+  @include vp-tablet {
+    margin-left: 30px;
+  }
+
+  @include vp-mobile {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+    &:first-child {
+      order: -8;
+    }
+  }
+}
+
+.nav-menu__link {
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-default-white;
+  letter-spacing: -0.04em;
+  vertical-align: top;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.nav-menu__item--promotion {
+  @include vp-mobile {
+    padding-left: 15px;
+    margin-top: -3px;
+    order: 1;
+  }
+}
+
+.nav-menu__item--services {
+  @include vp-mobile {
+    margin-bottom: 21px;
+    order: 2;
+  }
+}
+
+.nav-menu__item--coaches {
+  @include vp-mobile {
+    padding-left: 15px;
+    margin-bottom: 21px;
+    order: 3;
+  }
+}
+
+.nav-menu__item--subscriptions {
+  @include vp-mobile {
+    order: 4;
+  }
+}
+
+.nav-menu__item--timetable {
+  @include vp-mobile {
+    padding-left: 15px;
+    order: 5;
+  }
+}

@@ -1,0 +1,80 @@
+.form__wrapper {
+  display: flex;
+
+  @include vp-mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.form input {
+  width: 46.4%;
+  padding: 7px 0 5px;
+  margin-bottom: 29px;
+  display: block;
+  background: transparent;
+  outline: none;
+  color: $color-default-white;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:nth-of-type(2n) {
+    margin-left: 30px;
+
+    @include vp-tablet {
+      margin-left: 60px;
+    }
+
+    @include vp-mobile {
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    @include vp-mobile {
+      margin-bottom: 38px;
+    }
+  }
+
+  &::placeholder {
+    color: $color-default-white;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.form button {
+  width: 100%;
+  padding: 16px;
+  color: $color-default-white;
+  background-color: $color-default-black;
+  border: 3px solid $color-default-white;
+  font-weight: 700;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

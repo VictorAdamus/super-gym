@@ -1,0 +1,7 @@
+.main-bottom {
+  display: flex;
+
+  @include vp-tablet {
+    flex-direction: column;
+  }
+}

@@ -13,13 +13,30 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
+@import "swiper/swiper";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/visually-hidden";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/about";
+@import "blocks/tariff";
+@import "blocks/membership";
+@import "blocks/event";
+@import "blocks/date";
+@import "blocks/coach";
+@import "blocks/advantages";
+@import "blocks/promotion";
+@import "blocks/reviews";
+@import "blocks/main-bottom";
+@import "blocks/enlist";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/nav-menu";
+@import "blocks/social";
 
 // ---------------------------------
 

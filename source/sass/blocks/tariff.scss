@@ -1,0 +1,245 @@
+.tariff {
+  position: relative;
+  background-color: $color-blocks-bg;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 287px;
+    height: 494px;
+    bottom: -151px;
+    right: 0;
+    background: url("../img/barbells-desktop.png") no-repeat center;
+  }
+
+  @include vp-tablet {
+    &::after {
+      width: 348px;
+      bottom: -117px;
+      background: url("../img/barbells-tablet.png") no-repeat center;
+    }
+  }
+
+  @include vp-mobile {
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+.tariff__wrapper {
+  padding: 120px 0 80px;
+
+  @include vp-tablet {
+    padding: 82px 163px 100px 163px;
+  }
+
+  @include vp-mobile {
+    padding: 136px 15px 0;
+  }
+}
+
+.tariff__title {
+  margin: 0 0 17px -2px;
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+
+  @include vp-tablet {
+    margin-left: -12px;
+    margin-bottom: 18px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.tariff__list {
+  display: none;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.tariff__list--active {
+  max-width: 1160px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  font-family: $font-main;
+
+  @include vp-tablet {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+}
+
+.tariff__item {
+  width: 360px;
+  padding-top: 61px;
+  padding-bottom: 60px;
+  margin: 0 40px 40px 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+  z-index: 2;
+
+  &:nth-child(3n),
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 3 40%;
+  }
+
+  @include vp-tablet {
+    width: 100%;
+    padding: 60px 10px 61px;
+    margin-bottom: 38px;
+  }
+
+  @include vp-mobile {
+    padding-top: 41px;
+    padding-bottom: 48px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 39px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tariff__item h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  font-family: $font-main;
+  letter-spacing: -0.1em;
+
+  @include vp-tablet {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  @include vp-mobile {
+    margin: 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.tariff__item h4 {
+  margin: 0;
+  margin-top: 10px;
+  color: #495a7d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+
+  @include vp-tablet {
+    margin-top: 13px;
+  }
+
+  @include vp-mobile {
+    margin-top: 9px;
+  }
+}
+
+.tariff__item span {
+  display: block;
+  margin-bottom: -70px;
+  margin-top: 13px;
+  color: $color-price-bg;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+
+  @include vp-mobile {
+    margin-top: -7px;
+    font-size: 80px;
+  }
+}
+
+.tariff__price {
+  display: flex;
+  bottom: 28px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.tariff__price p {
+  margin: 0;
+  color: $color-price;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  margin-right: 12px;
+  letter-spacing: -0.03em;
+
+  @include vp-mobile {
+    padding-left: 5px;
+    margin-right: 10px;
+    font-size: 48px;
+  }
+}
+
+.tariff__icon-ruble {
+  width: 30px;
+  height: 42px;
+  fill: $color-default-black;
+
+  @include vp-mobile {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tariff__btn {
+  width: 206px;
+  padding: 23px 0;
+  margin: 7px auto 0;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #102654;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @include vp-tablet {
+    margin-top: 3px;
+  }
+
+  @include vp-mobile {
+    margin-top: -7px;
+  }
+}
+
+.tariff__list li:hover a,
+.tariff__btn:focus {
+  color: $color-default-white;
+  background: $gradient-button;
+  border: 2px solid transparent;
+  border-left: none;
+  border-right: none;
+}

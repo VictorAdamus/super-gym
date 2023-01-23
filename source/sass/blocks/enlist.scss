@@ -1,0 +1,47 @@
+.enlist {
+  width: 50%;
+  color: $color-default-white;
+  background-color: $color-default-black;
+
+  @include vp-tablet {
+    width: 100%;
+  }
+}
+
+.enlist__form {
+  max-width: 683px;
+  margin: 0 0 0 auto;
+  padding: 56px 170px 67px 103px;
+
+  @include vp-tablet {
+    margin: 0 auto;
+    padding: 71px 119px 66px 89px;
+  }
+
+  @include vp-mobile {
+    padding: 68px 15px 70px;
+  }
+}
+
+.enlist__title {
+  margin: 0 auto;
+  margin-bottom: 14px;
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+
+  @include vp-tablet {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 34px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
