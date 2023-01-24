@@ -132,7 +132,7 @@
   }
 
   @include vp-mobile {
-    width: 100%;
+    max-width: 200px;
     margin-top: 14px;
     margin-right: 2px;
     text-align: end;

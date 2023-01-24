@@ -183,6 +183,10 @@
 
 .advantages__item--professional .advantages__data {
   margin-right: 32px;
+
+  @include vp-mobile {
+    margin-right: 0;
+  }
 }
 
 .advantages__item--professional .advantages__subtitle {
@@ -288,7 +292,7 @@
 
   @include vp-mobile {
     width: 100%;
-    padding: 37px 74px 35px;
+    padding: 40px 74px 35px;
     margin: 0;
   }
 }
@@ -332,7 +336,7 @@
   }
 
   @include vp-mobile {
-    margin-top: 14px;
+    margin-top: -3px;
     font-size: 22px;
     line-height: 22px;
   }

@@ -1111,6 +1111,7 @@ main {
 }
 
 .tariff__wrapper {
+  background-color: #f8f9fc;
   padding: 120px 0 80px;
 }
 
@@ -3133,7 +3134,7 @@ main {
   }
 
   .promo__title {
-    width: 100%;
+    max-width: 200px;
     margin-top: 14px;
     margin-right: 2px;
     text-align: end;
@@ -3154,14 +3155,14 @@ main {
   }
 
   .about__title {
-    margin-top: 40px;
+    margin-left: 0;
+    margin-top: 42px;
     font-size: 32px;
     line-height: 32px;
   }
 
   .about__subtitle {
-    margin-top: 15px;
-    letter-spacing: -0.06em;
+    margin-top: 13px;
   }
 
   .about__text-container {
@@ -3195,11 +3196,11 @@ main {
   }
 
   .tariff__wrapper {
-    padding: 136px 15px 0;
+    padding: 136px 15px 70px;
   }
 
   .tariff__title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -3272,6 +3273,10 @@ main {
 
   .event__info {
     width: 100%;
+  }
+
+  .event__description {
+    margin-bottom: 10px;
   }
 
   .event__button {
@@ -3393,6 +3398,10 @@ main {
     margin: 0 auto;
   }
 
+  .advantages__item--professional .advantages__data {
+    margin-right: 0;
+  }
+
   .advantages__text-wrapper {
     text-align: center;
     max-width: 230px;
@@ -3409,7 +3418,7 @@ main {
 
   .advantages__equipment {
     width: 100%;
-    padding: 37px 74px 35px;
+    padding: 40px 74px 35px;
     margin: 0;
   }
 
@@ -3419,13 +3428,13 @@ main {
   }
 
   .advantages__equipment span:nth-child(2n) {
-    margin-top: 14px;
+    margin-top: -3px;
     font-size: 22px;
     line-height: 22px;
   }
 
   .promotion {
-    padding-top: 68px;
+    padding-top: 70px;
   }
 
   .promotion__container {
@@ -3446,6 +3455,7 @@ main {
   }
 
   .promotion__text {
+    padding-top: 35px;
     padding-left: 52px;
     min-height: 299px;
     text-align: center;
@@ -3463,9 +3473,13 @@ main {
     height: auto;
   }
 
+  .promotion__price {
+    margin-bottom: 12px;
+  }
+
   .promotion__description {
     min-height: 60px;
-    margin-top: 13px;
+    margin-bottom: 15px;
   }
 
   .promotion__list {
@@ -3486,7 +3500,7 @@ main {
   }
 
   .promotion__item h3 {
-    margin-top: 1px;
+    margin-top: 4px;
   }
 
   .promotion__item p {
@@ -3499,7 +3513,7 @@ main {
   }
 
   .reviews {
-    padding: 36px 7.5% 70px;
+    padding: 38px 7.5% 70px;
   }
 
   .reviews__title {

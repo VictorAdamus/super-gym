@@ -7,7 +7,7 @@
   }
 
   @include vp-mobile {
-    padding-top: 68px;
+    padding-top: 70px;
   }
 }
 
@@ -77,6 +77,7 @@
   }
 
   @include vp-mobile {
+    padding-top: 35px;
     padding-left: 52px;
     min-height: 299px;
     text-align: center;
@@ -129,6 +130,10 @@
   font-weight: 700;
   line-height: 73px;
   margin-bottom: 16px;
+
+  @include vp-mobile {
+    margin-bottom: 12px;
+  }
 }
 
 .promotion__description {
@@ -140,7 +145,7 @@
 
   @include vp-mobile {
     min-height: 60px;
-    margin-top: 13px;
+    margin-bottom: 15px;
   }
 }
 
@@ -220,7 +225,7 @@
   }
 
   @include vp-mobile {
-    margin-top: 1px;
+    margin-top: 4px;
   }
 }
 

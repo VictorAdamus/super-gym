@@ -29,6 +29,7 @@
 }
 
 .tariff__wrapper {
+  background-color: $color-blocks-bg;
   padding: 120px 0 80px;
 
   @include vp-tablet {
@@ -36,7 +37,7 @@
   }
 
   @include vp-mobile {
-    padding: 136px 15px 0;
+    padding: 136px 15px 70px;
   }
 }
 
@@ -57,7 +58,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 32px;
     line-height: 32px;
   }

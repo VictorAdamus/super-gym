@@ -87,6 +87,10 @@
     margin-left: -8px;
     margin-bottom: 28px;
   }
+
+  @include vp-mobile {
+    margin-bottom: 10px;
+  }
 }
 
 .event__button {
