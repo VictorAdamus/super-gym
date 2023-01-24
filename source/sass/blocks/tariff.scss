@@ -41,7 +41,7 @@
 }
 
 .tariff__title {
-  margin: 0 0 17px -2px;
+  margin: 0 0 17px -4px;
   text-align: center;
   font-family: $font-secondary;
   font-size: 54px;
@@ -86,7 +86,7 @@
 
 .tariff__item {
   width: 360px;
-  padding-top: 61px;
+  padding-top: 59px;
   padding-bottom: 60px;
   margin: 0 40px 40px 0;
   text-align: center;
@@ -130,7 +130,6 @@
   font-size: 26px;
   line-height: 26px;
   font-family: $font-main;
-  letter-spacing: -0.1em;
 
   @include vp-tablet {
     font-size: 26px;
@@ -146,12 +145,11 @@
 
 .tariff__item h4 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 11px;
   color: #495a7d;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.04em;
 
   @include vp-tablet {
     margin-top: 13px;
@@ -179,7 +177,7 @@
 
 .tariff__price {
   display: flex;
-  bottom: 28px;
+  bottom: 27px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -192,8 +190,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
-  margin-right: 12px;
-  letter-spacing: -0.03em;
+  margin-right: 14px;
 
   @include vp-mobile {
     padding-left: 5px;
@@ -215,16 +212,16 @@
 
 .tariff__btn {
   width: 206px;
-  padding: 23px 0;
-  margin: 7px auto 0;
+  padding: 22px 5px 24px;
+  margin: 8px auto 0;
   display: block;
   box-sizing: border-box;
   border: 2px solid #102654;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   @include vp-tablet {
     margin-top: 3px;

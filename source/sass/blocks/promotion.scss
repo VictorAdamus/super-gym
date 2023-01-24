@@ -1,5 +1,5 @@
 .promotion {
-  padding-top: 120px;
+  padding-top: 149px;
   font-family: $font-main;
 
   @include vp-tablet {
@@ -119,23 +119,23 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: -0.09em;
-  margin-bottom: -7px;
+  margin-bottom: -6px;
 }
 
 .promotion__price {
+  display: block;
   font-size: 70px;
   font-weight: 700;
   line-height: 73px;
-  letter-spacing: -0.06em;
+  margin-bottom: 16px;
 }
 
 .promotion__description {
-  min-height: 215px;
+  margin: 0;
+  min-height: 234px;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: -0.06em;
 
   @include vp-mobile {
     min-height: 60px;
@@ -149,8 +149,8 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
 
   &:hover,
   &:focus {
@@ -213,7 +213,6 @@
   margin-bottom: 10px;
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: -0.09em;
 
   @include vp-tablet {
     margin-bottom: 12px;
@@ -229,7 +228,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: -0.05em;
 
   @include vp-mobile {
     width: 160px;

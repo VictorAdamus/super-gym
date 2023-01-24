@@ -1,5 +1,5 @@
 .date__title {
-  margin: 0 0 10px 2px;
+  margin: 0 0 9px 2px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -17,7 +17,7 @@
 }
 
 .date__description {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -49,6 +49,8 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
+  margin-left: 2px;
+  margin-right: 6px;
 
   @include vp-tablet {
     font-size: 24px;
@@ -72,7 +74,7 @@
 .date__time,
 .date__description {
   width: max-content;
-  padding-top: 2px;
+  padding-top: 3px;
   border-top: 1px solid $color-default-white;
 
   @include vp-tablet {
@@ -84,7 +86,7 @@
 .date__time {
   display: block;
   line-height: 42px;
-  letter-spacing: -0.03em;
+  padding-top: 2px;
 
   @include vp-tablet {
     padding-top: 2px;

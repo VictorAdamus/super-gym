@@ -1,5 +1,5 @@
 .advantages {
-  padding: 146px 45px 37px;
+  padding: 147px 45px 7px;
   background-color: $color-blocks-bg;
   font-family: $font-main;
 
@@ -33,7 +33,7 @@
 .advantages__title {
   margin: 0;
   margin-left: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   text-align: center;
   font-family: $font-secondary;
   font-weight: 600;
@@ -70,7 +70,7 @@
   }
 
   &--bottom {
-    margin-top: -66px;
+    margin-top: -64px;
 
     @include vp-tablet {
       margin-top: 36px;
@@ -83,9 +83,10 @@
 }
 
 .advantages__item {
-  width: 32.8%;
+  width: 32.9%;
   min-height: 161px;
   display: flex;
+  padding-left: 1px;
 
   @include vp-tablet {
     width: 47%;
@@ -99,7 +100,7 @@
   }
 
   &--square {
-    padding-left: 21px;
+    padding-left: 22px;
     margin-right: 360px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
@@ -117,7 +118,7 @@
   }
 
   &--comfort {
-    padding-left: 21px;
+    padding-left: 22px;
     margin-right: 360px;
 
     @include vp-tablet {
@@ -180,8 +181,17 @@
   }
 }
 
+.advantages__item--professional .advantages__data {
+  margin-right: 32px;
+}
+
+.advantages__item--professional .advantages__subtitle {
+  margin-top: -1px;
+}
+
 .advantages__text-wrapper {
   text-align: left;
+  margin-top: -1px;
 
   @include vp-mobile {
     text-align: center;
@@ -195,7 +205,6 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
-  letter-spacing: -0.08em;
 
   @include vp-tablet {
     margin-top: 0;
@@ -214,7 +223,6 @@
   font-size: 71px;
   font-weight: 700;
   line-height: 71px;
-  letter-spacing: -0.04em;
   background: $gradient-number;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -226,7 +234,7 @@
 }
 
 .advantages__data span {
-  margin-top: -3px;
+  margin-top: -4px;
   font-size: 14px;
   line-height: 21px;
   color: #2e35ac;
@@ -241,12 +249,11 @@
 }
 
 .advantages__text {
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: -0.06em;
 
   @include vp-tablet {
     margin-top: 0;
@@ -256,6 +263,7 @@
 .advantages__equipment {
   position: relative;
   bottom: -13px;
+  right: -1px;
   width: 240px;
   min-height: 307px;
   height: 100%;
@@ -281,31 +289,22 @@
 }
 
 .advantages__equipment p {
-  margin-top: 33px;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.06em;
-
-
-  @include vp-tablet {
-    margin: 14px 0 0 0;
-  }
 }
 
 .advantages__equipment span:first-child {
   margin-right: 5px;
+  display: block;
+  margin-bottom: 1px;
   font-weight: 700;
   font-size: 74px;
   line-height: 74px;
 
-  @include vp-tablet {
-    display: block;
-  }
-
   @include vp-mobile {
     width: 100%;
-    display: block;
     line-height: 74px;
   }
 }
@@ -314,8 +313,9 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
-  margin-top: -20px;
-  letter-spacing: -0.06em;
+  display: block;
+  margin-bottom: 32px;
+
 
   @include vp-tablet {
     font-size: 22px;

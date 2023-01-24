@@ -1,7 +1,7 @@
 .coach {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 100px 103px 50px;
+  padding: 106px 103px 50px;
 
   @include vp-tablet {
     padding: 97px 101px 60px;
@@ -26,11 +26,11 @@
 }
 
 .coach__title h2 {
-  margin: 0 0 48px 0;
+  margin: 0 0 48px 2px;
   font-family: $font-secondary;
   font-size: 54px;
   line-height: 65px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   font-weight: 600;
 
   @include vp-tablet {

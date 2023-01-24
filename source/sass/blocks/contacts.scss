@@ -46,11 +46,10 @@
 }
 
 .contacts__subtitle {
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.09em;
 
   @include vp-tablet {
     margin-bottom: 12px;
@@ -78,7 +77,7 @@
 }
 
 .contacts__connection {
-  margin-left: 58px;
+  margin-left: 59px;
 
   @include vp-tablet {
     margin-left: 47px;
@@ -91,11 +90,10 @@
 
 .contacts__description,
 .contacts__link {
-  margin: 0 0 19px 0;
+  margin: 0 0 17px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: -0.05em;
 
   @include vp-tablet {
     margin-bottom: 25px;

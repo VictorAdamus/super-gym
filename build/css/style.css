@@ -451,7 +451,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -826,17 +826,10 @@ main {
 }
 
 .header {
-  padding-bottom: 53px;
+  padding-bottom: 51px;
   color: #ffffff;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   font-family: "Alumni Sans", "Courier new", monospace;
-}
-
-.header__wrapper {
-  max-width: 1160px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
 }
 
 .header__nav {
@@ -857,7 +850,6 @@ main {
 }
 
 .header__logo {
-  margin-left: 0;
   margin-right: 20px;
 }
 
@@ -868,7 +860,7 @@ main {
 
 .header__tel {
   margin-left: 20px;
-  margin-top: -10px;
+  margin-top: -14px;
   font-size: 26px;
   line-height: 32px;
   letter-spacing: 0.03em;
@@ -896,8 +888,8 @@ main {
 .promo__wrapper {
   width: 34%;
   max-width: 400px;
-  margin-right: 65px;
-  padding: 90px 0 43px 4.7%;
+  margin-right: 66px;
+  padding: 87px 0 43px 4.7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,7 +903,7 @@ main {
 }
 
 .promo__picture-container {
-  margin-top: -25px;
+  margin-top: -23px;
 }
 
 .promo__image {
@@ -919,11 +911,10 @@ main {
 }
 
 .promo__list {
-  margin: 0;
   padding: 0;
   list-style-type: none;
   width: 128px;
-  margin: -178px 262px 0 0;
+  margin: -177px 262px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,11 +927,10 @@ main {
 .promo__text {
   margin: 0;
   text-align: end;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: -0.05em;
 }
 
 .promo__description {
@@ -950,32 +940,35 @@ main {
   line-height: 58px;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-right: 50px;
+  margin-right: 49px;
 }
 
 .promo__title {
-  margin: 12px -1px 80px 0;
+  margin: 15px -2px 80px 0;
   text-align: end;
   font-family: "Alumni Sans", "Courier new", monospace;
-  font-size: 94px;
+  font-size: 92px;
   font-weight: 600;
   line-height: 110px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .promo__button {
   display: block;
   width: 230px;
   margin-top: auto;
-  padding: 19px 10px;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  padding: 19px 10px 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   line-height: 14px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   border: 4px solid #ffffff;
 }
 
@@ -1012,8 +1005,7 @@ main {
 
 .about__subtitle {
   margin: 0;
-  font-family: "Roboto Condense", "Arial", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -1021,11 +1013,11 @@ main {
 
 .about__text-container {
   max-width: 355px;
-  margin: 9px 0 0 60px;
+  margin: 8px 0 0 60px;
 }
 
 .about__description {
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -1123,7 +1115,7 @@ main {
 }
 
 .tariff__title {
-  margin: 0 0 17px -2px;
+  margin: 0 0 17px -4px;
   text-align: center;
   font-family: "Alumni Sans", "Courier new", monospace;
   font-size: 54px;
@@ -1151,12 +1143,12 @@ main {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .tariff__item {
   width: 360px;
-  padding-top: 61px;
+  padding-top: 59px;
   padding-bottom: 60px;
   margin: 0 40px 40px 0;
   text-align: center;
@@ -1183,18 +1175,16 @@ main {
   font-weight: 700;
   font-size: 26px;
   line-height: 26px;
-  font-family: "Roboto Condense", "Arial", sans-serif;
-  letter-spacing: -0.1em;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .tariff__item h4 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 11px;
   color: #495a7d;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.04em;
 }
 
 .tariff__item span {
@@ -1211,7 +1201,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 28px;
+  bottom: 27px;
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1228,8 +1218,7 @@ main {
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
-  margin-right: 12px;
-  letter-spacing: -0.03em;
+  margin-right: 14px;
 }
 
 .tariff__icon-ruble {
@@ -1240,8 +1229,8 @@ main {
 
 .tariff__btn {
   width: 206px;
-  padding: 23px 0;
-  margin: 7px auto 0;
+  padding: 22px 5px 24px;
+  margin: 8px auto 0;
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1249,36 +1238,32 @@ main {
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .tariff__list li:hover a,
 .tariff__btn:focus {
   color: #ffffff;
-  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003Eb7 95.31%);
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003Eb7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: 2px solid transparent;
   border-left: none;
   border-right: none;
 }
 
 .memberships {
+  width: 341px;
+  padding: 0;
+  list-style-type: none;
+  max-width: 1160px;
+  margin: 0 auto 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  width: 341px;
-  padding: 0;
-  list-style-type: none;
-  max-width: 1160px;
-  margin: 0 auto 36px;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
@@ -1301,7 +1286,7 @@ main {
   background-color: transparent;
   border: none;
   outline: none;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1339,7 +1324,7 @@ main {
 .event {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 121px 0 7px;
+  padding: 121px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1354,7 +1339,7 @@ main {
 
 .event__info {
   width: 43%;
-  padding: 85px 78px 86px 90px;
+  padding: 85px 78px 84px 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,7 +1361,7 @@ main {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   z-index: 1;
 }
 
@@ -1396,7 +1381,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 35px;
+  margin-left: 34px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1404,25 +1389,26 @@ main {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .event__description {
-  margin: 0 0 43px -10px;
+  margin: 0 0 47px -15px;
+  font-size: 18px;
 }
 
 .event__button {
-  width: 343px;
-  padding: 24px 0;
-  margin-top: auto;
-  margin-left: -12px;
+  width: 347px;
+  padding: 24px 5px 25px;
+  margin-left: -17px;
   display: block;
-  border: 4px solid #ffffff;
   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 4px solid #ffffff;
   box-sizing: border-box;
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -1444,14 +1430,14 @@ main {
 }
 
 .date__title {
-  margin: 0 0 10px 2px;
+  margin: 0 0 9px 2px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
 }
 
 .date__description {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1485,6 +1471,8 @@ main {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
+  margin-left: 2px;
+  margin-right: 6px;
 }
 
 .date__month,
@@ -1499,20 +1487,20 @@ main {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-top: 2px;
+  padding-top: 3px;
   border-top: 1px solid #ffffff;
 }
 
 .date__time {
   display: block;
   line-height: 42px;
-  letter-spacing: -0.03em;
+  padding-top: 2px;
 }
 
 .coach {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 100px 103px 50px;
+  padding: 106px 103px 50px;
 }
 
 .coach__title {
@@ -1520,11 +1508,11 @@ main {
 }
 
 .coach__title h2 {
-  margin: 0 0 48px 0;
+  margin: 0 0 48px 2px;
   font-family: "Alumni Sans", "Courier new", monospace;
   font-size: 54px;
   line-height: 65px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   font-weight: 600;
 }
 
@@ -1558,7 +1546,7 @@ main {
   justify-content: flex-start;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .coach__list--nojs {
@@ -1680,9 +1668,9 @@ main {
 }
 
 .advantages {
-  padding: 146px 45px 37px;
+  padding: 147px 45px 7px;
   background-color: #f8f9fc;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .advantages__container {
@@ -1702,7 +1690,7 @@ main {
 .advantages__title {
   margin: 0;
   margin-left: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   text-align: center;
   font-family: "Alumni Sans", "Courier new", monospace;
   font-weight: 600;
@@ -1718,25 +1706,26 @@ main {
 }
 
 .advantages__wrapper--bottom {
-  margin-top: -66px;
+  margin-top: -64px;
 }
 
 .advantages__item {
-  width: 32.8%;
+  width: 32.9%;
   min-height: 161px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 1px;
 }
 
 .advantages__item--square {
-  padding-left: 21px;
+  padding-left: 22px;
   margin-right: 360px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages__item--comfort {
-  padding-left: 21px;
+  padding-left: 22px;
   margin-right: 360px;
 }
 
@@ -1764,8 +1753,17 @@ main {
   padding-right: 7px;
 }
 
+.advantages__item--professional .advantages__data {
+  margin-right: 32px;
+}
+
+.advantages__item--professional .advantages__subtitle {
+  margin-top: -1px;
+}
+
 .advantages__text-wrapper {
   text-align: left;
+  margin-top: -1px;
 }
 
 .advantages__subtitle {
@@ -1773,7 +1771,6 @@ main {
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
-  letter-spacing: -0.08em;
 }
 
 .advantages__quantity {
@@ -1783,7 +1780,6 @@ main {
   font-size: 71px;
   font-weight: 700;
   line-height: 71px;
-  letter-spacing: -0.04em;
   background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
@@ -1793,24 +1789,24 @@ main {
 }
 
 .advantages__data span {
-  margin-top: -3px;
+  margin-top: -4px;
   font-size: 14px;
   line-height: 21px;
   color: #2e35ac;
 }
 
 .advantages__text {
-  margin-top: 4px;
+  margin-top: 5px;
   margin-bottom: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: -0.06em;
 }
 
 .advantages__equipment {
   position: relative;
   bottom: -13px;
+  right: -1px;
   width: 240px;
   min-height: 307px;
   height: 100%;
@@ -1822,15 +1818,16 @@ main {
 }
 
 .advantages__equipment p {
-  margin-top: 33px;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.06em;
 }
 
 .advantages__equipment span:first-child {
   margin-right: 5px;
+  display: block;
+  margin-bottom: 1px;
   font-weight: 700;
   font-size: 74px;
   line-height: 74px;
@@ -1840,13 +1837,13 @@ main {
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
-  margin-top: -20px;
-  letter-spacing: -0.06em;
+  display: block;
+  margin-bottom: 32px;
 }
 
 .promotion {
-  padding-top: 120px;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  padding-top: 149px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .promotion__container {
@@ -1901,23 +1898,23 @@ main {
   font-size: 28px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: -0.09em;
-  margin-bottom: -7px;
+  margin-bottom: -6px;
 }
 
 .promotion__price {
+  display: block;
   font-size: 70px;
   font-weight: 700;
   line-height: 73px;
-  letter-spacing: -0.06em;
+  margin-bottom: 16px;
 }
 
 .promotion__description {
-  min-height: 215px;
+  margin: 0;
+  min-height: 234px;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: -0.06em;
 }
 
 .promotion__link {
@@ -1926,8 +1923,8 @@ main {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
 }
 
 .promotion__link:hover,
@@ -1973,7 +1970,6 @@ main {
   margin-bottom: 10px;
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: -0.09em;
 }
 
 .promotion__item p {
@@ -1981,7 +1977,6 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: -0.05em;
 }
 
 .promotion__item a {
@@ -2012,7 +2007,7 @@ main {
 }
 
 .reviews__title {
-  margin: 0 0 37px 8px;
+  margin: 0 0 37px 9px;
   text-align: center;
   font-family: "Alumni Sans", "Courier new", monospace;
   font-size: 54px;
@@ -2038,7 +2033,7 @@ main {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .reviews__item {
@@ -2073,14 +2068,12 @@ main {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: -0.09em;
 }
 
 .reviews__description {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.06em;
 }
 
 .reviews__button {
@@ -2152,7 +2145,7 @@ main {
   background: transparent;
   outline: none;
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2172,7 +2165,7 @@ main {
 
 .form input::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2180,7 +2173,7 @@ main {
 
 .form input::-moz-placeholder {
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2188,7 +2181,7 @@ main {
 
 .form input:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2196,7 +2189,7 @@ main {
 
 .form input::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2204,7 +2197,7 @@ main {
 
 .form input::placeholder {
   color: #ffffff;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2217,7 +2210,7 @@ main {
   background-color: #102654;
   border: 3px solid #ffffff;
   font-weight: 700;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -2234,7 +2227,7 @@ main {
   width: 50%;
   padding: 56px 0 45px 120px;
   border-top: 1px solid #74819c;
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .contacts__text {
@@ -2253,11 +2246,10 @@ main {
 }
 
 .contacts__subtitle {
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.09em;
 }
 
 .contacts__location {
@@ -2275,16 +2267,15 @@ main {
 }
 
 .contacts__connection {
-  margin-left: 58px;
+  margin-left: 59px;
 }
 
 .contacts__description,
 .contacts__link {
-  margin: 0 0 19px 0;
+  margin: 0 0 17px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: -0.05em;
 }
 
 .contacts__description:last-child {
@@ -2337,8 +2328,8 @@ main {
   padding: 0;
   list-style-type: none;
   width: 440px;
-  padding-top: 2px;
-  margin-left: 31px;
+  padding-top: 3px;
+  margin-left: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2360,12 +2351,11 @@ main {
 }
 
 .nav-menu__link {
-  font-family: "Roboto Condense", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: #ffffff;
-  letter-spacing: -0.04em;
   vertical-align: top;
 }
 
@@ -2865,14 +2855,6 @@ main {
     padding: 30px 126px 35px;
   }
 
-  .advantages__equipment p {
-    margin: 14px 0 0 0;
-  }
-
-  .advantages__equipment span:first-child {
-    display: block;
-  }
-
   .advantages__equipment span:nth-child(2n) {
     font-size: 22px;
     line-height: 31px;
@@ -3124,10 +3106,6 @@ main {
 
   .promo__list {
     margin: -175px auto 0 -15px;
-  }
-
-  .promo__text {
-    letter-spacing: -0.05em;
   }
 
   .promo__description {
@@ -3420,7 +3398,6 @@ main {
 
   .advantages__equipment span:first-child {
     width: 100%;
-    display: block;
     line-height: 74px;
   }
 
