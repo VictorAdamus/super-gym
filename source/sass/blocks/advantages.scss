@@ -4,7 +4,7 @@
   font-family: $font-main;
 
   @include vp-tablet {
-    padding: 97px 45px 26px;
+    padding: 95px 45px 22px;
   }
 
   @include vp-mobile {
@@ -42,8 +42,8 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-left: 0;
-    margin-bottom: 44px;
+    margin-left: -20px;
+    margin-bottom: 46px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -161,7 +161,7 @@
 
 .advantages__item:nth-of-type(2n+1) {
   @include vp-tablet {
-    margin-right: 6%;
+    margin-right: 35px;
   }
 }
 
@@ -187,6 +187,10 @@
 
 .advantages__item--professional .advantages__subtitle {
   margin-top: -1px;
+
+  @include vp-tablet {
+    margin-top: 1px;
+  }
 }
 
 .advantages__text-wrapper {
@@ -241,6 +245,7 @@
 
   @include vp-tablet {
     line-height: 25px;
+    margin-top: -12px;
   }
 
   @include vp-mobile {
@@ -277,8 +282,8 @@
     width: 65.2%;
     min-height: 239px;
     bottom: 4px;
-    margin: -24px auto 0;
-    padding: 30px 126px 35px;
+    margin: -25px auto 0;
+    padding: 32px 126px 35px;
   }
 
   @include vp-mobile {
@@ -303,6 +308,10 @@
   font-size: 74px;
   line-height: 74px;
 
+  @include vp-tablet {
+    margin-right: 6px;
+  }
+
   @include vp-mobile {
     width: 100%;
     line-height: 74px;
@@ -316,10 +325,10 @@
   display: block;
   margin-bottom: 32px;
 
-
   @include vp-tablet {
     font-size: 22px;
     line-height: 31px;
+    margin-bottom: 14px;
   }
 
   @include vp-mobile {

@@ -1459,10 +1459,6 @@ main {
   flex-flow: column;
 }
 
-.event__date-block__number {
-  margin-right: 7px;
-}
-
 .date__number,
 .date__time {
   width: -webkit-max-content;
@@ -2445,7 +2441,7 @@ main {
   }
 
   .header__nav {
-    padding: 40px 45px 23px;
+    padding: 39px 45px 23px;
     margin: 0;
   }
 
@@ -2458,7 +2454,7 @@ main {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-top: -4px;
+    margin-top: -2px;
   }
 
   .promo {
@@ -2473,7 +2469,7 @@ main {
   }
 
   .promo__picture-container {
-    margin-top: 0;
+    margin-top: -2px;
   }
 
   .promo__image {
@@ -2482,10 +2478,11 @@ main {
   }
 
   .promo__list {
-    margin: -163px 216px 0 0;
+    margin: -161px 216px 0 0;
   }
 
   .promo__description {
+    margin-top: -1px;
     margin-right: 9px;
     font-size: 34px;
     line-height: 41px;
@@ -2493,20 +2490,26 @@ main {
 
   .promo__title {
     font-weight: 700;
-    margin-top: 6px;
-    font-size: 82px;
+    margin-top: 5px;
+    font-size: 72px;
     line-height: 86px;
-    letter-spacing: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+  }
+
+  .promo__title::first-letter {
+    text-transform: uppercase;
   }
 
   .promo__button {
-    width: 185px;
-    margin: auto 3px 0 0;
-    padding: 19px 25px;
+    width: 183px;
+    margin: auto 5px 0 0;
+    padding: 19px 5px 20px;
   }
 
   .about {
     padding-top: 60px;
+    padding-bottom: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column wrap;
@@ -2514,17 +2517,15 @@ main {
   }
 
   .about__title {
-    margin: 43px 0 -5px 0;
+    margin: 44px 0 -4px -15px;
     font-size: 42px;
     line-height: 42px;
-    letter-spacing: 0.06em;
   }
 
   .about__subtitle {
     margin-top: 7px;
     font-size: 18px;
     line-height: 27px;
-    letter-spacing: -0.04em;
   }
 
   .about__text-container {
@@ -2534,9 +2535,7 @@ main {
   }
 
   .about__description:first-of-type {
-    margin-top: 35px;
-    padding-right: 27px;
-    letter-spacing: -0.06em;
+    margin-top: 34px;
   }
 
   .about p:first-child {
@@ -2566,7 +2565,7 @@ main {
   .about__video-container {
     width: 266px;
     height: 167px;
-    margin-top: -85px;
+    margin-top: -84px;
     margin-left: 0;
   }
 
@@ -2576,16 +2575,16 @@ main {
 
   .tariff::after {
     width: 348px;
-    bottom: -117px;
+    bottom: -151px;
     background: url("../img/barbells-tablet.png") no-repeat center;
   }
 
   .tariff__wrapper {
-    padding: 82px 163px 100px 163px;
+    padding: 100px 163px 100px 163px;
   }
 
   .tariff__title {
-    margin-left: -12px;
+    margin-left: -13px;
     margin-bottom: 18px;
     font-size: 42px;
     line-height: 50px;
@@ -2597,13 +2596,16 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 70px;
   }
 
   .tariff__item {
     width: 100%;
-    padding: 60px 10px 61px;
-    margin-bottom: 38px;
+    padding: 58px 10px 61px;
+    margin-bottom: 40px;
+  }
+
+  .tariff__item:last-child {
+    margin-bottom: 0;
   }
 
   .tariff__item h3 {
@@ -2612,15 +2614,18 @@ main {
   }
 
   .tariff__item h4 {
-    margin-top: 13px;
+    margin-top: 11px;
   }
 
   .tariff__btn {
-    margin-top: 3px;
+    margin-top: 7px;
+    padding: 23px 5px 23px;
   }
 
   .memberships {
+    width: 332px;
     margin-bottom: 43px;
+    padding-bottom: 1px;
   }
 
   .memberships__item {
@@ -2628,22 +2633,22 @@ main {
   }
 
   .memberships__button {
+    bottom: -1px;
     padding-top: 2px;
     font-size: 18px;
     line-height: 27px;
   }
 
   .event {
-    padding: 67px 45px 7px;
+    padding: 101px 45px 7px;
   }
 
   .event__info {
-    padding: 51px 45px;
+    padding: 50px 20px 50px 53px;
   }
 
   .event__header {
-    padding-left: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2658,13 +2663,13 @@ main {
   }
 
   .event__date {
-    margin: -4px 0 0 34px;
+    margin: -4px 0 0 31px;
   }
 
   .event__description {
-    font-size: 11px;
-    margin-left: 1px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin-left: -8px;
+    margin-bottom: 28px;
   }
 
   .event__button {
@@ -2673,7 +2678,7 @@ main {
     font-size: 10px;
     line-height: 12px;
     width: 202px;
-    margin-left: 0;
+    margin-left: -8px;
   }
 
   .event__image img {
@@ -2692,7 +2697,7 @@ main {
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 1px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
   }
 
   .date__title:first-child {
@@ -2700,33 +2705,33 @@ main {
   }
 
   .date__description {
+    padding-bottom: 2px;
     width: 42px;
     height: 32px;
     margin: 0;
-    margin-bottom: 1px;
-  }
-
-  .event__date-block__number {
-    margin-right: 1px;
   }
 
   .date__number,
   .date__time {
     font-size: 24px;
     line-height: 36px;
+    margin-right: 5px;
   }
 
   .date__month,
   .date__year {
-    margin-left: 3px;
     font-size: 10px;
     line-height: 11px;
+  }
+
+  .date__month {
+    display: block;
+    margin-top: 1px;
   }
 
   .date__time,
   .date__description {
     padding-top: 0;
-    margin-bottom: 3px;
   }
 
   .date__time {
@@ -2736,7 +2741,7 @@ main {
   }
 
   .coach {
-    padding: 97px 101px 60px;
+    padding: 97px 101px 60px 101px;
   }
 
   .coach__title {
@@ -2745,6 +2750,7 @@ main {
   }
 
   .coach__title h2 {
+    margin-right: 8px;
     margin-bottom: 36px;
     text-align: center;
     font-size: 42px;
@@ -2752,14 +2758,14 @@ main {
   }
 
   .coach__slider {
-    max-width: 576px;
+    width: 100%;
   }
 
   .coach__list {
-    max-width: 566px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    width: 566px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .coach__item {
@@ -2768,17 +2774,13 @@ main {
     margin-right: 30px;
   }
 
-  .coach__item:nth-child(odd) {
-    margin-right: 0;
-  }
-
   .coach__name {
     margin-top: 245px;
     margin-left: 10px;
   }
 
   .advantages {
-    padding: 97px 45px 26px;
+    padding: 95px 45px 22px;
   }
 
   .advantages__container {
@@ -2790,8 +2792,8 @@ main {
   }
 
   .advantages__title {
-    margin-left: 0;
-    margin-bottom: 44px;
+    margin-left: -20px;
+    margin-bottom: 46px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -2822,12 +2824,16 @@ main {
   }
 
   .advantages__item:nth-of-type(2n+1) {
-    margin-right: 6%;
+    margin-right: 35px;
   }
 
   .advantages__item--professional .advantages__text,
   .advantages__item--parking .advantages__text {
     padding-right: 0;
+  }
+
+  .advantages__item--professional .advantages__subtitle {
+    margin-top: 1px;
   }
 
   .advantages__subtitle {
@@ -2841,6 +2847,7 @@ main {
 
   .advantages__data span {
     line-height: 25px;
+    margin-top: -12px;
   }
 
   .advantages__text {
@@ -2851,17 +2858,22 @@ main {
     width: 65.2%;
     min-height: 239px;
     bottom: 4px;
-    margin: -24px auto 0;
-    padding: 30px 126px 35px;
+    margin: -25px auto 0;
+    padding: 32px 126px 35px;
+  }
+
+  .advantages__equipment span:first-child {
+    margin-right: 6px;
   }
 
   .advantages__equipment span:nth-child(2n) {
     font-size: 22px;
     line-height: 31px;
+    margin-bottom: 14px;
   }
 
   .promotion {
-    padding-top: 92px;
+    padding-top: 96px;
   }
 
   .promotion__container {
@@ -2873,14 +2885,15 @@ main {
   }
 
   .promotion__title {
-    margin-bottom: 40px;
+    margin-right: 7px;
+    margin-bottom: 44px;
     font-size: 42px;
     line-height: 42px;
   }
 
   .promotion__main {
     width: 100%;
-    margin: 0 0 32px;
+    margin: 0 0 30px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -2913,8 +2926,8 @@ main {
     width: calc(52% - 30px);
     min-height: 211px;
     margin-bottom: 30px;
-    padding-top: 27px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 28px;
   }
 
   .promotion__item:last-child {
@@ -2930,11 +2943,12 @@ main {
   }
 
   .reviews {
-    padding: 70px 7.5% 0;
+    padding: 65px 7.5% 0;
   }
 
   .reviews__title {
-    margin-bottom: 40px;
+    margin-left: -6px;
+    margin-bottom: 45px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -2987,13 +3001,15 @@ main {
 
   .enlist__form {
     margin: 0 auto;
-    padding: 71px 119px 66px 89px;
+    padding: 65px 119px 69px 89px;
   }
 
   .enlist__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 30px;
+    margin-left: 2px;
+    margin-bottom: 34px;
+    letter-spacing: 0.02em;
   }
 
   .form input:nth-of-type(2n) {
@@ -3004,11 +3020,11 @@ main {
     width: 100%;
     max-width: 683px;
     margin: 0 auto;
-    padding: 68px 0 40px 11.7%;
+    padding: 64px 0 40px 11.7%;
   }
 
   .contacts__title {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -3048,9 +3064,11 @@ main {
   }
 
   .nav-menu__list {
+    width: auto;
     padding-top: 0;
     padding-left: 42px;
-    margin-left: 0;
+    margin-left: 34px;
+    margin-top: -2px;
   }
 
   .nav-menu__list {
@@ -3139,7 +3157,6 @@ main {
     margin-top: 40px;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0.03em;
   }
 
   .about__subtitle {

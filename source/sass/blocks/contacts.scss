@@ -8,7 +8,7 @@
     width: 100%;
     max-width: 683px;
     margin: 0 auto;
-    padding: 68px 0 40px 11.7%;
+    padding: 64px 0 40px 11.7%;
   }
 
   @include vp-mobile {
@@ -33,7 +33,7 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     font-size: 42px;
     line-height: 42px;
   }

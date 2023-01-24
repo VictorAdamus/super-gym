@@ -10,9 +10,11 @@
   flex-wrap: wrap;
 
   @include vp-tablet {
+    width: auto;
     padding-top: 0;
     padding-left: 42px;
-    margin-left: 0;
+    margin-left: 34px;
+    margin-top: -2px;
   }
 
   @include vp-mobile {

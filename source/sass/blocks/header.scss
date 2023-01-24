@@ -27,7 +27,7 @@
   flex-wrap: wrap;
 
   @include vp-tablet {
-    padding: 40px 45px 23px;
+    padding: 39px 45px 23px;
     margin: 0;
   }
 
@@ -72,7 +72,7 @@
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-top: -4px;
+    margin-top: -2px;
   }
 
   @include vp-mobile {

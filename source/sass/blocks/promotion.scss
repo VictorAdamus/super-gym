@@ -3,7 +3,7 @@
   font-family: $font-main;
 
   @include vp-tablet {
-    padding-top: 92px;
+    padding-top: 96px;
   }
 
   @include vp-mobile {
@@ -36,7 +36,8 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-bottom: 40px;
+    margin-right: 7px;
+    margin-bottom: 44px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -59,7 +60,7 @@
 
   @include vp-tablet {
     width: 100%;
-    margin: 0 0 32px;
+    margin: 0 0 30px;
     justify-content: space-between;
   }
 
@@ -191,8 +192,8 @@
     width: calc(52% - 30px);
     min-height: 211px;
     margin-bottom: 30px;
-    padding-top: 27px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 28px;
 
     &:last-child {
       margin-bottom: 30px;

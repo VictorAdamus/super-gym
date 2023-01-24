@@ -42,7 +42,7 @@
   margin-top: -23px;
 
   @include vp-tablet {
-    margin-top: 0;
+    margin-top: -2px;
   }
 
   @include vp-mobile {
@@ -68,7 +68,7 @@
   flex-flow: column;
 
   @include vp-tablet {
-    margin: -163px 216px 0 0;
+    margin: -161px 216px 0 0;
   }
 
   @include vp-mobile {
@@ -95,6 +95,7 @@
   margin-right: 49px;
 
   @include vp-tablet {
+    margin-top: -1px;
     margin-right: 9px;
     font-size: 34px;
     line-height: 41px;
@@ -119,10 +120,15 @@
 
   @include vp-tablet {
     font-weight: 700;
-    margin-top: 6px;
-    font-size: 82px;
+    margin-top: 5px;
+    font-size: 72px;
     line-height: 86px;
-    letter-spacing: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 
   @include vp-mobile {
@@ -158,9 +164,9 @@
   }
 
   @include vp-tablet {
-    width: 185px;
-    margin: auto 3px 0 0;
-    padding: 19px 25px;
+    width: 183px;
+    margin: auto 5px 0 0;
+    padding: 19px 5px 20px;
   }
 
   @include vp-mobile {

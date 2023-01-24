@@ -8,7 +8,7 @@
     font-size: 12px;
     line-height: 18px;
     padding-bottom: 1px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
 
     &:first-child {
       width: 42px;
@@ -23,10 +23,10 @@
   align-items: center;
 
   @include vp-tablet {
+    padding-bottom: 2px;
     width: 42px;
     height: 32px;
     margin: 0;
-    margin-bottom: 1px;
   }
 }
 
@@ -35,13 +35,6 @@
   flex-flow: column;
 }
 
-.event__date-block__number {
-  margin-right: 7px;
-
-  @include vp-tablet {
-    margin-right: 1px;
-  }
-}
 
 .date__number,
 .date__time {
@@ -55,6 +48,7 @@
   @include vp-tablet {
     font-size: 24px;
     line-height: 36px;
+    margin-right: 5px;
   }
 }
 
@@ -65,9 +59,15 @@
   line-height: 18px;
 
   @include vp-tablet {
-    margin-left: 3px;
     font-size: 10px;
     line-height: 11px;
+  }
+}
+
+.date__month {
+  @include vp-tablet {
+    display: block;
+    margin-top: 1px;
   }
 }
 
@@ -79,7 +79,6 @@
 
   @include vp-tablet {
     padding-top: 0;
-    margin-bottom: 3px;
   }
 }
 
