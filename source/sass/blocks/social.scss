@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 
   @include vp-mobile {
-    margin-top: 16px;
+    margin-top: 13px;
     justify-content: flex-start;
   }
 }

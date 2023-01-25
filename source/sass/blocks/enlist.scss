@@ -19,7 +19,7 @@
   }
 
   @include vp-mobile {
-    padding: 68px 15px 70px;
+    padding: 67px 15px 70px;
   }
 }
 
@@ -43,6 +43,7 @@
   @include vp-mobile {
     margin-bottom: 34px;
     font-size: 32px;
+    margin-left: 0;
     line-height: 32px;
     letter-spacing: 0.02em;
   }
