@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнес-центр в Омске.">
   <title>Super Gym</title>
-  <link rel="stylesheet" href="css/style.min.css" type="text/css">
   <link rel="preload" href="fonts/alumni-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css" onload="this.rel='stylesheet'">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                 srcset="./img/fitnes-man-tablet@1x.webp 1x, ./img/fitnes-man-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/fitnes-man-desktop@1x.webp, ./img/fitnes-man-desktop@2x.webp 2x">
               <img class="promo__image" src="./img/fitnes-man-desktop@1x.jpg"
-                srcset="./img/fitnes-man-desktop@2x.jpg 2x" alt="Фитнес герой." width="500" height="556">
+                srcset="./img/fitnes-man-desktop@2x.jpg 2x" alt="Фитнес герой." width="500" height="556" loading="lazy">
             </picture>
           </div>
         </div>
@@ -86,7 +86,7 @@
                 srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/gym-desktop@1x.webp, ./img/gym-desktop@2x.webp 2x">
               <img class="about__gym-img" src="./img/gym-desktop@1x.jpg" alt="зал для тренировок" width="660"
-                height="401">
+                height="401" loading="lazy">
             </picture>
           </div>
           <div class="about__video" data-video>
@@ -98,7 +98,7 @@
                   srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="./img/video-desktop@1x.webp, ./img/video-desktop@2x.webp 2x">
                 <img class="about__video-picture" src="./img/video-desktop@1x.jpg" width="364" height="228"
-                  alt="видео с залом для тренировок" data-video-media>
+                  alt="видео с залом для тренировок" data-video-media loading="lazy">
               </picture>
             </a>
             <button class="about__video-button about__video-button--nojs" type="button" aria-label="Поссмотреть видео."
@@ -122,7 +122,7 @@
             </ul>
             <div class="tariff__bet">
               <ul class="tariff__list tariff__list--active">
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>С тренером</h3>
                   <h4>12 занятий</h4>
                   <span>5000</span>
@@ -134,7 +134,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Дневной</h3>
                   <h4>с 8:00 до 17:00</h4>
                   <span>1700</span>
@@ -146,7 +146,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Полный день</h3>
                   <h4>с 8:00 до 22:00 </h4>
                   <span>2700</span>
@@ -159,7 +159,7 @@
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tariff__list">
+              <ul class="tariff__list" tabindex="0">
                 <li class="tariff__item">
                   <h3>С тренером</h3>
                   <h4>12 занятий</h4>
@@ -172,7 +172,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Дневной</h3>
                   <h4>с 8:00 до 17:00</h4>
                   <span>850</span>
@@ -184,7 +184,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Полный день</h3>
                   <h4>с 8:00 до 22:00 </h4>
                   <span>1300</span>
@@ -197,7 +197,7 @@
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tariff__list">
+              <ul class="tariff__list" tabindex="0">
                 <li class="tariff__item">
                   <h3>С тренером</h3>
                   <h4>12 занятий</h4>
@@ -210,7 +210,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Дневной</h3>
                   <h4>с 8:00 до 17:00</h4>
                   <span>400</span>
@@ -222,7 +222,7 @@
                   </div>
                   <a class="tariff__btn" href="#">купить абонемент</a>
                 </li>
-                <li class="tariff__item">
+                <li class="tariff__item" tabindex="0">
                   <h3>Полный день</h3>
                   <h4>с 8:00 до 22:00 </h4>
                   <span>650</span>
@@ -282,7 +282,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-1@1x.webp, ./img/coach-1@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-1@1x.jpg" alt="Анна Павлова" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-1@1x.jpg" alt="Анна Павлова" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Анна Павлова</h3>
@@ -301,7 +301,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-2@1x.webp, ./img/coach-2@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-2@1x.jpg" alt="Алексей Лавров" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-2@1x.jpg" alt="Алексей Лавров" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Алексей Лавров</h3>
@@ -320,7 +320,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-3@1x.webp, ./img/coach-3@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-3@1x.jpg" alt="Александр Пашков" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-3@1x.jpg" alt="Александр Пашков" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Александр Пашков</h3>
@@ -339,7 +339,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-4@1x.webp, ./img/coach-4@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-4@1x.jpg" alt="Мария Кетова" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-4@1x.jpg" alt="Мария Кетова" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Мария Кетова</h3>
@@ -358,7 +358,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-4@1x.webp, ./img/coach-4@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-4@1x.jpg" alt="Мария Кетова" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-4@1x.jpg" alt="Мария Кетова" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Мария Кетова</h3>
@@ -377,7 +377,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-3@1x.webp, ./img/coach-3@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-3@1x.jpg" alt="Александр Пашков" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-3@1x.jpg" alt="Александр Пашков" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Александр Пашков</h3>
@@ -396,7 +396,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-2@1x.webp, ./img/coach-2@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-2@1x.jpg" alt="Алексей Лавров" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-2@1x.jpg" alt="Алексей Лавров" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Алексей Лавров</h3>
@@ -415,7 +415,7 @@
                 <div class="coach__item-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/coach-1@1x.webp, ./img/coach-1@2x.webp 2x">
-                    <img class="coach__img" src="./img/coach-1@1x.jpg" alt="Анна Павлова" width="268" height="294">
+                    <img class="coach__img" src="./img/coach-1@1x.jpg" alt="Анна Павлова" width="268" height="294" loading="lazy">
                   </picture>
                   <div class="coach__info" tabindex="0">
                     <h3 class="coach__name">Анна Павлова</h3>
@@ -559,7 +559,7 @@
                       <picture>
                         <source type="image/webp" srcset="./img/user-icon@1x.webp 1x, ./img/user-icon@2x.webp 2x">
                         <img class="reviews__avatar" srcset="./img/user-icon@1x.png 1x, ./img/user-icon@2x.png 2x"
-                          src="./img/user-icon@1x.png" alt="Анна Орлова" width="80" height="80">
+                          src="./img/user-icon@1x.png" alt="Анна Орлова" width="80" height="80" loading="lazy">
                       </picture>
                     </p>
                       <h4 class="reviews__name">Анна Орлова</h4>
@@ -576,7 +576,7 @@
                       <picture>
                         <source type="image/webp" srcset="./img/user-icon@1x.webp 1x, ./img/user-icon@2x.webp 2x">
                         <img class="reviews__avatar" srcset="./img/user-icon@1x.png 1x, ./img/user-icon@2x.png 2x"
-                          src="./img/user-icon@1x.png" alt="Алла Пугачева" width="80" height="80">
+                          src="./img/user-icon@1x.png" alt="Алла Пугачева" width="80" height="80" loading="lazy">
                       </picture>
                     </p>
                       <h4 class="reviews__name">Алла Пугачева</h4>
@@ -592,7 +592,7 @@
                       <picture>
                         <source type="image/webp" srcset="./img/user-icon@1x.webp 1x, ./img/user-icon@2x.webp 2x">
                         <img class="reviews__avatar" srcset="./img/user-icon@1x.png 1x, ./img/user-icon@2x.png 2x"
-                          src="./img/user-icon@1x.png" alt="Полина Гагарина" width="80" height="80">
+                          src="./img/user-icon@1x.png" alt="Полина Гагарина" width="80" height="80" loading="lazy">
                       </picture>
                     </p>
                       <h4 class="reviews__name">Полина Гагарина</h4>
@@ -620,7 +620,7 @@
               <label for="name" class="visually-hidden">Имя</label>
               <input type="text" id="name" name="Имя" placeholder="Имя" minlength="2" maxlength="15" required>
               <label for="tel" class="visually-hidden">Телефон</label>
-              <input type="tel" id="tel" name="Телефон" placeholder="Телефон" pattern="^\+?[\d ()-]+$" required>
+              <input type="tel" id="tel" name="Телефон" placeholder="Телефон" minlength="5" maxlength="15" pattern="^\+?[\d ()-]+$" required>
             </div>
             <button type="submit">Отправить</button>
           </form>
@@ -650,7 +650,7 @@
       <div class="footer__container">
         <a class="footer__logo footer__logo--desktop">
           <span class="visually-hidden">Логотип FitnesGym.</span>
-          <svg class="logo__icon" width="122" height="44">
+          <svg class="logo__icon" width="122" height="44" focusable="false" aria-hidden="true">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
@@ -686,24 +686,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">В Вконтакте.</span>
-                <svg class="social__icon" width="25" height="25">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+                <svg class="social__icon" width="25" height="25" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">В Однокласниках.</span>
-                <svg class="social__icon" width="25" height="25">
+                <span class="visually-hidden">Мы в Однокласниках.</span>
+                <svg class="social__icon" width="25" height="25" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-ok"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">В Reddit.</span>
-                <svg class="social__icon" width="25" height="25">
+                <span class="visually-hidden">Мы в Reddit.</span>
+                <svg class="social__icon" width="25" height="25" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite.svg#icon-red"></use>
                 </svg>
               </a>
