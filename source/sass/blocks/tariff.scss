@@ -7,7 +7,7 @@
 
   @include vp-tablet {
     padding-top: 101px;
-    margin-bottom: 102px;
+    margin-bottom: 100px;
   }
 
   @include vp-mobile {
@@ -30,7 +30,7 @@
     &::after {
       width: 342px;
       height: 437px;
-      bottom: -124px;
+      bottom: -120px;
       background: url("../img/barbells-tablet.png") no-repeat center;
     }
   }
@@ -48,11 +48,11 @@
   align-items: center;
 
   @include vp-tablet {
-    padding: 100px 163px 100px 163px;
+    padding: 0 163px 100px;
   }
 
   @include vp-mobile {
-    padding: 136px 15px 70px;
+    padding: 0 15px 70px;
   }
 }
 
@@ -66,12 +66,14 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-bottom: 21px;
+    padding-right: 11px;
+    margin-bottom: 16px;
     font-size: 42px;
     line-height: 50px;
   }
 
   @include vp-mobile {
+    margin-bottom: 14px;
     padding-right: 10px;
     font-size: 32px;
     line-height: 38px;
@@ -120,8 +122,9 @@
   }
 
   @include vp-tablet {
-    width: 100%;
+    width: 442px;
     padding: 58px 10px 61px;
+    margin-right: 0;
     margin-bottom: 40px;
 
     &:last-child {
@@ -243,7 +246,7 @@
 
   @include vp-tablet {
     margin-top: 7px;
-    padding: 23px 5px 23px;
+    padding: 24px 5px 23px;
   }
 
   @include vp-mobile {

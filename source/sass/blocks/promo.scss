@@ -41,14 +41,14 @@
     font-size: 34px;
     line-height: 41px;
     margin-right: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   @include vp-mobile {
     font-size: 28px;
     line-height: 33px;
     margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }
 
@@ -77,12 +77,13 @@
 
   @include vp-tablet {
     width: 185px;
-    margin-left: 25px;
+    margin-left: 27px;
   }
 
   @include vp-mobile {
     width: 100%;
-    margin-left: 0;
+    max-width: 290px;
+    margin: 0 auto;
     grid-column: 1/4;
   }
 }
@@ -117,11 +118,12 @@
   text-transform: uppercase;
 
   @include vp-tablet {
+    margin-bottom: 36px;
     font-weight: 700;
     font-size: 72px;
     line-height: 86px;
     text-transform: lowercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 
     &::first-letter {
       text-transform: uppercase;
@@ -131,7 +133,9 @@
   @include vp-mobile {
     margin-bottom: 22px;
     margin-left: auto;
+    margin-right: 5px;
     font-size: 74px;
+    font-weight: 700;
     letter-spacing: 0.02em;
   }
 }
@@ -152,7 +156,8 @@
   }
 
   @include vp-mobile {
-    margin-top: 25px;
+    margin-top: 31px;
+    margin-left: 2px;
     margin-bottom: 5px;
     grid-column: 1/3;
   }

@@ -11,9 +11,9 @@
 
   @include vp-tablet {
     width: auto;
-    padding-top: 2px;
-    padding-left: 42px;
-    margin-left: 34px;
+    padding-top: 4px;
+    padding-left: 0;
+    margin-left: 32px;
     margin-top: -2px;
   }
 
@@ -43,7 +43,7 @@
   @include vp-mobile {
     width: 50%;
     margin-left: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     &:first-child {
       order: -8;

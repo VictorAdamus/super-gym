@@ -8,7 +8,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: 66px;
+    margin-bottom: 63px;
     min-height: 584px;
   }
 }
@@ -90,6 +90,7 @@
 
   @include vp-tablet {
     min-width: 60px;
+    margin-top: 0;
   }
 
   &::before,
@@ -112,7 +113,7 @@
     width: 88px;
 
     @include vp-tablet {
-      top: 74px;
+      top: 73px;
       width: 56px;
     }
   }
@@ -150,15 +151,15 @@
     line-height: 21px;
 
     @include vp-tablet {
-      top: 23px;
-      left: 18px;
+      top: 24px;
+      left: 15px;
       font-size: 10px;
-      line-height: 15px;
+      line-height: 12px;
     }
   }
 
   &--time {
-    margin-top: 8px;
+    margin-top: 0px;
   }
 }
 
@@ -194,9 +195,8 @@
   font-size: 18px;
 
   @include vp-tablet {
-    margin: -3px 0 46px;
+    margin: -3px 0 26px;
     font-size: 12px;
-    margin-bottom: 30px;
   }
 
   @include vp-mobile {
@@ -218,7 +218,7 @@
 }
 
 .event__image img {
-  max-width: fit-content;
+  max-width: content;
 
   @include vp-tablet {
     min-width: 100%;

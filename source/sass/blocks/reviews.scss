@@ -5,7 +5,7 @@
 
   @include vp-tablet {
     max-width: 767px;
-    padding: 87px 103px 120px;
+    padding: 60px 101px 100px;
   }
 
   @include vp-mobile {
@@ -24,7 +24,7 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-left: 0;
+    margin-left: -2px;
     margin-bottom: 40px;
     font-size: 42px;
     line-height: 50px;
@@ -49,31 +49,31 @@
     display: none;
   }
 
-  @include vp-tablet {
-    left: -3%;
-  }
-
-  @include vp-mobile {
-    top: 48%;
-  }
 
   &--next {
     rotate: 180deg;
     left: 91%;
 
     @include vp-tablet {
-      left: 98%;
+      left: 91.3%;
+      top: 51%;
     }
 
     @include vp-mobile {
       top: 52%;
-      left: 89%;
+      left: 90%;
     }
   }
 
   &--prev {
+    left: 3%;
+
+    @include vp-tablet {
+      left: 5%;
+      top: 51%;
+    }
     @include vp-mobile {
-      top: 53%;
+      top: 52%;
       left: 3%;
     }
   }
@@ -116,8 +116,8 @@
 
 
   @include vp-tablet {
-    padding: 55px 62px 58px 65px;
-    gap: 0 28px;
+    padding: 56px 60px 58px 64px;
+    gap: 0 29px;
   }
 
   @include vp-mobile {

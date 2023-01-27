@@ -10,7 +10,7 @@
 
   @include vp-mobile {
     padding-top: 63px;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
   }
 }
 
@@ -58,7 +58,7 @@
 
   @include vp-mobile {
     margin-right: 27px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -91,6 +91,7 @@
 
     @include vp-tablet {
       padding-left: 0;
+      grid-column: 1;
     }
   }
 }
@@ -111,7 +112,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: -4px;
+    margin-bottom: -10px;
   }
 }
 
@@ -129,11 +130,11 @@
 
   @include vp-tablet {
     font-size: 20px;
-    padding: 12px 0 1px;
+    padding: 10px 0 0;
   }
 
   @include vp-mobile {
-    padding-top: 4px;
+    padding-top: 8px;
   }
 }
 
@@ -191,9 +192,9 @@
   }
 
   @include vp-mobile {
-    margin: 30px auto 27px;
+    margin: 22px auto 31px;
     grid-row: 3;
-    padding: 22px 74px 20px;
+    padding: 36px 74px 20px;
     width: 100%;
     max-width: 100%;
     min-height: 239px;
@@ -210,13 +211,14 @@
   font-weight: 700;
 
   p {
+    margin: 0;
     font-size: 74px;
     margin-right: 3px;
     margin-bottom: 33px;
 
     @include vp-tablet {
       margin-right: 6px;
-      margin-bottom: 32px;
+      margin-bottom: 27px;
     }
   }
 

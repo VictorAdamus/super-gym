@@ -52,7 +52,7 @@
 
   @include vp-tablet {
     margin-right: 15px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     font-size: 42px;
     line-height: 50px;
     text-align: center;
@@ -85,7 +85,9 @@
   margin-top: 40px;
 
   @include vp-tablet {
+    padding: 0 88px;
     margin-top: 35px;
+    text-align: center;
 
     p:not(:first-child) {
       display: none;
@@ -94,7 +96,8 @@
 
   @include vp-mobile {
     margin-top: 25px;
-    padding-right: 30px;
+    padding: 0;
+    padding-right: 32px;
   }
 
   p {
@@ -107,11 +110,15 @@
     }
 
     @include vp-tablet {
-      margin-bottom: 42px;
+      &:first-child {
+        margin-bottom: 44px;
+      }
     }
 
     @include vp-mobile {
-      margin-bottom: 33px;
+      &:first-child {
+        margin-bottom: 35px;
+      }
     }
   }
 }

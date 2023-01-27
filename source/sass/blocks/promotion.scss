@@ -75,7 +75,7 @@
   @include vp-mobile {
     max-width: 100%;
     min-height: 299px;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
     align-items: center;
   }
 }
@@ -87,6 +87,10 @@
 .promotion__price {
   font-size: 70px;
   margin: 29px 0 23px;
+
+  @include vp-mobile {
+    margin-bottom: 40px;
+  }
 }
 
 .promotion__description {
@@ -99,7 +103,7 @@
   @include vp-mobile {
     text-align: center;
     margin-top: -5px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 }
 

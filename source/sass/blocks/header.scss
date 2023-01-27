@@ -40,11 +40,13 @@
   align-items: center;
 
   @include vp-tablet {
-    padding-top: 37px;
+    padding-top: 36px;
+    padding-bottom: 1px;
   }
 
   @include vp-mobile {
     padding-top: 15px;
+    padding-bottom: 0;
   }
 }
 
@@ -56,10 +58,8 @@
   gap: 20px;
   z-index: 5;
 
-
   @include vp-tablet {
     width: 85%;
-    align-items: unset;
   }
 
   @include vp-mobile {
@@ -84,6 +84,7 @@
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
+    margin-left: auto;
   }
 
   @include vp-mobile {
