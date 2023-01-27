@@ -167,10 +167,11 @@
 
   @include vp-mobile {
     position: static;
-    width: 100%;
+    width: 90%;
+    min-width: 320px;
     height: 167px;
     padding-bottom: 42.25%;
-    margin-top: 39px;
+    margin: 39px auto 0;
     transform: translate(0);
   }
 }

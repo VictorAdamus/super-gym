@@ -3902,10 +3902,11 @@ button,
 
   .about__video {
     position: static;
-    width: 100%;
+    width: 90%;
+    min-width: 320px;
     height: 167px;
     padding-bottom: 42.25%;
-    margin-top: 39px;
+    margin: 39px auto 0;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
@@ -3974,6 +3975,7 @@ button,
   }
 
   .memberships {
+    max-width: 442px;
     width: 100%;
     margin: 0;
     margin-bottom: 36px;
