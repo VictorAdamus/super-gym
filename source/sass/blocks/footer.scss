@@ -23,7 +23,8 @@
   }
 }
 
-.footer__logo img {
+.footer__logo svg {
+  fill: $color-default-white;
   width: 88px;
   height: 32px;
 

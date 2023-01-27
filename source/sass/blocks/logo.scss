@@ -1,0 +1,13 @@
+.logo__icon {
+  fill: $color-default-white;
+
+  @include vp-tablet {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-mobile {
+    width: 69px;
+    height: 24px;
+  }
+}

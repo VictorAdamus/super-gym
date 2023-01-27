@@ -1,12 +1,25 @@
 .tariff {
   position: relative;
+  min-height: 851px;
+  padding-top: 120px;
   background-color: $color-blocks-bg;
+  margin-bottom: 120px;
+
+  @include vp-tablet {
+    padding-top: 101px;
+    margin-bottom: 102px;
+  }
+
+  @include vp-mobile {
+    padding-top: 65px;
+    margin-bottom: 70px;
+  }
 
   &::after {
     content: "";
     position: absolute;
     display: block;
-    width: 287px;
+    width: 290px;
     height: 494px;
     bottom: -151px;
     right: 0;
@@ -15,8 +28,9 @@
 
   @include vp-tablet {
     &::after {
-      width: 348px;
-      bottom: -151px;
+      width: 342px;
+      height: 437px;
+      bottom: -124px;
       background: url("../img/barbells-tablet.png") no-repeat center;
     }
   }
@@ -28,9 +42,10 @@
   }
 }
 
-.tariff__wrapper {
-  background-color: $color-blocks-bg;
-  padding: 120px 0 80px;
+.tariff__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include vp-tablet {
     padding: 100px 163px 100px 163px;
@@ -42,7 +57,7 @@
 }
 
 .tariff__title {
-  margin: 0 0 17px -4px;
+  margin: 0 0 18px 0;
   text-align: center;
   font-family: $font-secondary;
   font-size: 54px;
@@ -51,17 +66,15 @@
   letter-spacing: 0.03em;
 
   @include vp-tablet {
-    margin-left: -13px;
-    margin-bottom: 18px;
+    margin-bottom: 21px;
     font-size: 42px;
     line-height: 50px;
   }
 
   @include vp-mobile {
-    margin-left: -10px;
-    margin-bottom: 18px;
+    padding-right: 10px;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 38px;
   }
 }
 

@@ -1,37 +1,43 @@
 const sliderCoach = () => {
   const coachBlock = document.querySelector('.coach');
-  const prevButton = document.querySelector('.coach__button--prev');
-  const nextButton = document.querySelector('.coach__button--next');
-  const coachList = document.querySelector('.coach__list');
-
+  const coachSlider = document.querySelector('.coach__slider');
+  const buttonNext = document.querySelector('.coach__button--next');
+  const buttonPrev = document.querySelector('.coach__button--prev');
   if (coachBlock) {
-    prevButton.classList.remove('coach__button--nojs');
-    nextButton.classList.remove('coach__button--nojs');
-    coachList.classList.remove('coach__list--nojs');
+
+    buttonNext.classList.remove('coach__button--nojs');
+    buttonPrev.classList.remove('coach__button--nojs');
+    coachSlider.classList.remove('coach__slider--nojs');
 
     const coachSwiper = new Swiper('.coach__slider', { // eslint-disable-line
+      autoHeight: true,
+      direction: 'horizontal',
+      watchOverflow: true,
       loop: true,
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      spaceBetween: 30,
+      spaceBetween: 40,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
       navigation: {
-        nextEl: '.coach__button--next',
-        prevEl: '.coach__button--prev',
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
       },
       breakpoints: {
         320: {
+          initialSlide: 1,
           slidesPerView: 1,
-          slidesPerGroup: 1,
           spaceBetween: 0,
         },
         768: {
+          initialSlide: 2,
           slidesPerView: 2,
-          slidesPerGroup: 2,
           spaceBetween: 30,
         },
         1200: {
+          initialSlide: 0,
           slidesPerView: 4,
-          slidesPerGroup: 4,
           spaceBetween: 40,
         },
       },
