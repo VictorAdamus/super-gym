@@ -1,34 +1,31 @@
+.social {
+  max-width: 100px;
+  min-width: 100px;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: auto;
-  max-width: 250px;
-  margin-top: -2px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 11px;
 
   @include vp-mobile {
-    margin-top: 13px;
+
     justify-content: flex-start;
   }
 }
 
 .social__item {
-  margin-right: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @include vp-tablet {
-    margin-right: 20px;
-  }
-
-  @include vp-mobile {
-    margin-right: 11px;
-  }
+.social__link {
+  display: block;
 }
 
 .social__link:hover .social__icon,

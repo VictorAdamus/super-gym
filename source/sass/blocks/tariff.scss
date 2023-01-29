@@ -138,6 +138,9 @@
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 39px;
+    max-width: 442px;
+    min-width: 290px;
+    width: 100%;
 
     &:last-child {
       margin-bottom: 0;

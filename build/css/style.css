@@ -2189,7 +2189,7 @@ button,
 }
 
 .event__item--time {
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .event__button {
@@ -3040,22 +3040,36 @@ button,
 }
 
 .footer {
-  color: #ffffff;
-  background-color: #030a1a;
-}
-
-.footer__container {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 44px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #030a1a;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px 100px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.footer__logo {
+  margin-top: 5px;
 }
 
 .footer__logo svg {
@@ -3064,39 +3078,30 @@ button,
   height: 32px;
 }
 
-.footer__logo--mobile {
-  display: none;
-}
-
 .footer__nav-menu {
-  padding-top: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .nav-menu__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 440px;
-  padding-top: 3px;
-  margin-left: 49px;
+  margin-left: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
+  justify-content: start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.nav-menu__item {
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
-
-.nav-menu__item:first-child,
-.nav-menu__item:nth-child(2) {
-  margin-left: 0;
+  max-width: 600px;
+  gap: 10px 40px;
 }
 
 .nav-menu__link {
@@ -3113,29 +3118,32 @@ button,
   opacity: 0.5;
 }
 
+.social {
+  max-width: 100px;
+  min-width: 100px;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: auto;
-  max-width: 250px;
-  margin-top: -2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 11px;
 }
 
 .social__item {
-  margin-right: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
-.social__item:last-child {
-  margin-right: 0;
+.social__link {
+  display: block;
 }
 
 .social__link:hover .social__icon,
@@ -3475,6 +3483,10 @@ button,
     line-height: 12px;
   }
 
+  .event__item--time {
+    margin-top: 0;
+  }
+
   .event__button {
     width: 97%;
     padding: 12px 10px;
@@ -3742,8 +3754,14 @@ button,
   }
 
   .footer__container {
-    width: 100%;
-    padding: 48px 45px 48px 41px;
+    max-width: 100%;
+    padding-top: 45px;
+    padding-bottom: 33px;
+    gap: 10px;
+  }
+
+  .footer__logo {
+    margin-top: 1px;
   }
 
   .footer__logo svg {
@@ -3751,24 +3769,10 @@ button,
     height: 18px;
   }
 
-  .footer__logo--desktop {
-    padding-left: 5px;
-  }
-
   .nav-menu__list {
-    width: auto;
-    padding-top: 4px;
-    padding-left: 0;
-    margin-left: 32px;
-    margin-top: -2px;
-  }
-
-  .nav-menu__item {
-    margin-left: 30px;
-  }
-
-  .social__item {
-    margin-right: 20px;
+    padding-top: 5px;
+    margin-left: 15px;
+    gap: 10px 30px;
   }
 }
 
@@ -3938,6 +3942,9 @@ button,
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 39px;
+    max-width: 442px;
+    min-width: 290px;
+    width: 100%;
   }
 
   .tariff__item:last-child {
@@ -4016,6 +4023,10 @@ button,
 
   .event__title {
     padding-left: 8px;
+  }
+
+  .event__item--time {
+    margin-top: 0;
   }
 
   .event__description {
@@ -4321,13 +4332,29 @@ button,
     margin: 0;
   }
 
-  .footer__container {
-    width: 100%;
+  .footer {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 48px 15px 50px;
+    padding: 45px 0;
+  }
+
+  .footer__container {
+    position: relative;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 3px;
+    left: 15px;
   }
 
   .footer__logo svg {
@@ -4335,41 +4362,25 @@ button,
     height: 15px;
   }
 
-  .footer__logo {
+  .footer__nav-menu {
     width: 100%;
-    margin-right: 0;
-  }
-
-  .footer__logo--desktop {
-    display: none;
-  }
-
-  .footer__logo--mobile {
-    display: block;
   }
 
   .nav-menu__list {
-    width: 100%;
-    padding-left: 0;
+    display: block;
     margin-left: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    font-size: 16px;
-    line-height: 19px;
+    gap: 75px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 
   .nav-menu__item {
-    width: 50%;
-    margin-left: 0;
-    margin-bottom: 20px;
+    margin-top: 16px;
   }
 
-  .nav-menu__item:first-child {
-    -webkit-box-ordinal-group: -7;
-    -ms-flex-order: -8;
-    order: -8;
+  .nav-menu__item:first-of-type {
+    margin-top: 40px;
   }
 
   .nav-menu__link {
@@ -4377,51 +4388,10 @@ button,
     line-height: 19px;
   }
 
-  .nav-menu__item--promotion {
-    padding-left: 15px;
-    margin-top: -3px;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .nav-menu__item--services {
-    margin-bottom: 21px;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .nav-menu__item--coaches {
-    padding-left: 15px;
-    margin-bottom: 21px;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-
-  .nav-menu__item--subscriptions {
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
-    order: 4;
-  }
-
-  .nav-menu__item--timetable {
-    padding-left: 15px;
-    -webkit-box-ordinal-group: 6;
-    -ms-flex-order: 5;
-    order: 5;
-  }
-
   .social__list {
-    margin-top: 13px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-  }
-
-  .social__item {
-    margin-right: 11px;
   }
 }
 
