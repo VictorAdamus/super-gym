@@ -14,7 +14,6 @@ const sliderReviews = () => {
   const reviewsSwiper = new Swiper('.reviews__slider', { // eslint-disable-line
     direction: 'horizontal',
     loop: false,
-    autoHeight: true,
     watchOverflow: true,
     loopedSlides: 0,
     keyboard: {

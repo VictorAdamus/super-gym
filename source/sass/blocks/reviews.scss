@@ -5,7 +5,7 @@
 
   @include vp-tablet {
     max-width: 767px;
-    padding: 60px 101px 100px;
+    padding: 60px 101px 99px;
   }
 
   @include vp-mobile {
@@ -15,7 +15,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 37px 8px;
+  margin: 0 0 36px 8px;
   text-align: center;
   font-family: $font-secondary;
   font-size: 54px;
@@ -41,8 +41,6 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 52%;
-  left: 5%;
   cursor: pointer;
 
   &--nojs {
@@ -52,6 +50,7 @@
 
   &--next {
     rotate: 180deg;
+    top: 293px;
     left: 91%;
 
     @include vp-tablet {
@@ -66,7 +65,8 @@
   }
 
   &--prev {
-    left: 3%;
+    top: 293px;
+    left: 5%;
 
     @include vp-tablet {
       left: 5%;
@@ -112,7 +112,7 @@
 .reviews__content-wrapper {
   display: grid;
   grid-template-columns: 80px auto;
-  padding: 55px 62px 58px;
+  padding: 55px 62px 57px;
   gap: 0 28px;
 
 

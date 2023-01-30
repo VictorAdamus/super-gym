@@ -30,14 +30,18 @@
 
 .header__logo {
   margin-right: 30px;
+
+  @include vp-tablet {
+    margin-top: 5px;
+  }
 }
 
 .header__container {
   display: flex;
   gap: 10px 30px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 30px;
-  align-items: center;
+  align-items: flex-start;
 
   @include vp-tablet {
     padding-top: 36px;
@@ -45,7 +49,7 @@
   }
 
   @include vp-mobile {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 0;
   }
 }
@@ -53,17 +57,16 @@
 .header__tel {
   position: relative;
   align-self: flex-start;
+  justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
   gap: 20px;
   z-index: 5;
-
-  @include vp-tablet {
-    width: 85%;
-  }
+  max-width: 750px;
 
   @include vp-mobile {
-    width: 75%;
+    margin-top: 6px;
   }
 }
 

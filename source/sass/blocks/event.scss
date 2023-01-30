@@ -16,7 +16,8 @@
 .event__container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
 
   @include vp-mobile {
@@ -31,7 +32,7 @@
   min-height: 500px;
   width: 500px;
   min-width: 450px;
-  padding: 85px 77px 85px;
+  padding: 85px 77px 83px;
   background-color: $color-red;
   color: $color-default-white;
 
@@ -57,7 +58,7 @@
   }
 
   @include vp-mobile {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -90,7 +91,7 @@
 
   @include vp-tablet {
     min-width: 60px;
-    margin-top: 0;
+    margin-top: 1px;
   }
 
   &::before,
@@ -139,6 +140,7 @@
     @include vp-tablet {
       font-size: 24px;
       line-height: 36px;
+      margin-left: -1px;
     }
   }
 
@@ -162,7 +164,8 @@
     margin-top: 10px;
 
     @include vp-tablet {
-      margin-top: 0;
+      margin-top: -1px;
+      margin-left: -1px;
     }
 
     @include vp-mobile {
@@ -199,7 +202,7 @@
 }
 
 .event__description {
-  margin: 11px 0 46px;
+  margin: 10px 0 46px;
   font-size: 18px;
 
   @include vp-tablet {
@@ -214,25 +217,28 @@
 
 .event__image {
   background-color: $color-default-black;
+  max-width: 100%;
 
   @include vp-tablet {
-    max-width: 386px;
+    max-width: 100%;
   }
 
   @include vp-mobile {
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 290px;
   }
 }
 
 .event__image img {
-  max-width: content;
+  max-width: max-content;
+  height: 100%;
+  object-fit: cover;
 
   @include vp-tablet {
     min-width: 100%;
   }
 
   @include vp-mobile {
+    max-width: 100%;
     min-height: 292px;
   }
 }

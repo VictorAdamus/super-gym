@@ -1,6 +1,10 @@
 .promotion {
-  padding-top: 10px;
+  padding-top: 50px;
   padding-bottom: 30px;
+
+  @include vp-tablet {
+    padding-top: 10px;
+  }
 }
 
 .promotion__container {

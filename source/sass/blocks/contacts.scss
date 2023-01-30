@@ -6,13 +6,14 @@
 
   @include vp-tablet {
     width: 100%;
+    border: none;
     max-width: 683px;
     margin: 0 auto;
-    padding: 64px 0 40px 11.7%;
+    padding: 65px 0 39px 11.7%;
   }
 
   @include vp-mobile {
-    padding: 66px 15px 40px;
+    padding: 66px 15px 39px;
   }
 }
 
@@ -39,7 +40,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -54,6 +55,10 @@
   @include vp-tablet {
     margin-bottom: 12px;
     font-size: 20px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 11px;
   }
 }
 
@@ -73,6 +78,7 @@
   @include vp-mobile {
     width: 100%;
     border: none;
+    margin-bottom: 26px;
   }
 }
 
@@ -99,14 +105,15 @@
     margin-bottom: 25px;
     font-size: 18px;
   }
+
+  @include vp-mobile {
+    margin-bottom: 26px;
+  }
 }
+
 
 .contacts__description:last-child {
   margin-bottom: 0;
-
-  @include vp-tablet {
-    margin-bottom: 24px;
-  }
 }
 
 .contacts__link {

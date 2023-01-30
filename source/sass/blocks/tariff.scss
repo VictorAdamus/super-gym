@@ -7,7 +7,7 @@
 
   @include vp-tablet {
     padding-top: 101px;
-    margin-bottom: 100px;
+    margin-bottom: 99px;
   }
 
   @include vp-mobile {
@@ -30,7 +30,7 @@
     &::after {
       width: 342px;
       height: 437px;
-      bottom: -120px;
+      bottom: -122px;
       background: url("../img/barbells-tablet.png") no-repeat center;
     }
   }
@@ -89,14 +89,15 @@
 
 .tariff__list--active {
   max-width: 1160px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  column-gap: 40px;
   font-family: $font-main;
 
   @include vp-tablet {
     width: 100%;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -104,7 +105,7 @@
   width: 360px;
   padding-top: 59px;
   padding-bottom: 60px;
-  margin: 0 40px 40px 0;
+  margin: 0 0 40px 0;
   text-align: center;
   box-sizing: border-box;
   background-color: $color-default-white;

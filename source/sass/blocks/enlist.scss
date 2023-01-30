@@ -11,15 +11,15 @@
 .enlist__form {
   max-width: 683px;
   margin: 0 0 0 auto;
-  padding: 56px 170px 67px 103px;
+  padding: 56px 170px 70px 103px;
 
   @include vp-tablet {
     margin: 0 auto;
-    padding: 65px 119px 69px 89px;
+    padding: 66px 119px 70px 89px;
   }
 
   @include vp-mobile {
-    padding: 67px 15px 70px;
+    padding: 67px 15px 69px;
   }
 }
 

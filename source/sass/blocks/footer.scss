@@ -15,9 +15,9 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   gap: 10px 100px;
-  padding-top: 38px;
+  padding-top: 46px;
   padding-bottom: 38px;
 
   @include vp-tablet {
@@ -31,20 +31,21 @@
     position: relative;
     justify-content: start;
     flex-wrap: wrap;
+    padding-top: 0;
     gap: 22px;
   }
 }
 
 .footer__logo {
-  margin-top: 5px;
+  margin-top: -2px;
 
   @include vp-tablet {
-    margin-top: 1px;
+    margin-top: 3px;
   }
 
   @include vp-mobile {
     position: absolute;
-    top: 3px;
+    top: 1px;
     left: 15px;
   }
 }

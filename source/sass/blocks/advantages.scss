@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 148px;
-  margin-bottom: 146px;
+  margin-bottom: 100px;
   background-color: $color-blocks-bg;
 
   @include vp-tablet {
@@ -16,22 +16,22 @@
 
 .advantages__container {
   max-width: 1136px;
-  padding: 0 45px 73px;
+  padding: 0 45px 83px;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
   grid-auto-flow: dense;
-  gap: 137px 60px;
+  gap: 65px 60px;
 
   @include vp-tablet {
     max-width: 768px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 31px;
   }
 
   @include vp-mobile {
     max-width: 100%;
-    padding: 0 0 41px;
+    padding: 0 0 35px;
     grid-template-columns: 1fr;
     gap: 0;
     justify-items: center;
@@ -41,7 +41,7 @@
 .advantages__title {
   margin: 0;
   margin-left: 10px;
-  margin-bottom: 33px;
+  margin-bottom: 36px;
   text-align: center;
   font-family: $font-secondary;
   font-weight: 600;
@@ -68,11 +68,12 @@
   grid-column: 3;
   display: flex;
   column-gap: 30px;
+  box-sizing: border-box;
   overflow-wrap: break-word;
 
   @include vp-tablet {
     grid-column: 2;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   @include vp-mobile {
@@ -92,13 +93,44 @@
     @include vp-tablet {
       padding-left: 0;
       grid-column: 1;
+      grid-row: 1/1;
     }
+
+    @include vp-mobile {
+      grid-row: auto;
+    }
+  }
+
+  &--border {
+    padding-top: 62px;
+    border-top:  2px solid rgba(209, 10, 66, 0.2);
+
+    @include vp-tablet {
+      border: none;
+      padding-top: 0;
+      grid-row: 3/3;
+    }
+
+    @include vp-mobile {
+      grid-row: auto;
+      padding-bottom: 25px;
+    }
+  }
+
+  &--top {
+    min-height: 106px;
+  }
+}
+
+.advantages__wrapper--border .advantages__quantity {
+  @include vp-mobile {
+    margin-bottom: -14px;
   }
 }
 
 .advantages__quantity {
   margin: 0;
-  margin-bottom: -12px;
+  margin-bottom: -14px;
   background-image: $gradient-number;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,11 +177,10 @@
 }
 
 .advantages__equipment {
-  position: relative;
-  grid-column: 2;
+  grid-column: 2/2;
   grid-row: 2 span;
   max-width: 240px;
-  margin: 21px auto auto;
+  margin: 19px auto auto;
   padding: 81px 34px 57px;
   background-color: $color-blue;
   color: $color-default-white;
@@ -157,47 +188,23 @@
   flex-direction: column;
   justify-content: center;
 
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    width: 340px;
-    height: 2px;
-    background-color: #d10a42;
-    opacity: 0.2;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &::before {
-    right: 129px;
-  }
-
-  &::after {
-    left: 471px;
-  }
-
   @include vp-tablet {
-    max-width: 442px;
-    margin: 22px auto 35px;
-    padding: 59px 135px 38px;
-    grid-column: 1/-1;
-    grid-row: 2;
+    min-width: 442px;
+    grid-row: 2/2;
+    grid-column: 1/3;
+    margin: 0 auto;
+    padding: 58px 120px 39px;
+    margin-bottom: 35px;
 
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 
   @include vp-mobile {
-    margin: 22px auto 31px;
-    grid-row: 3;
-    padding: 36px 74px 20px;
+    grid-row: 3/3;
+    min-width: auto;
+    max-width: none;
     width: 100%;
-    max-width: 100%;
-    min-height: 239px;
+    margin-top: 21px;
+    padding: 64px 60px 41px;
   }
 
   p {
@@ -218,7 +225,7 @@
 
     @include vp-tablet {
       margin-right: 6px;
-      margin-bottom: 27px;
+      margin-bottom: 28px;
     }
   }
 
@@ -234,7 +241,7 @@
     }
 
     @include vp-mobile {
-      margin: -7px 0 12px;
+      margin: 0 0 12px;
     }
   }
 }
