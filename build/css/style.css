@@ -2589,6 +2589,8 @@ button,
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
 }
 
 .promotion__title {
@@ -2602,8 +2604,9 @@ button,
 }
 
 .promotion__main {
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
 }
 
 .promotion__main-wrapper {
@@ -2689,6 +2692,9 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
 }
 
 .promotion__list {
@@ -3675,7 +3681,7 @@ button,
 
   .promotion__image img {
     min-width: 399px;
-    height: 462px;
+    min-height: 462px;
   }
 
   .promotion__list {
@@ -4261,8 +4267,7 @@ button,
 
   .promotion__image img {
     min-width: 100%;
-    max-height: 500px;
-    height: calc(100vw - 21px);
+    min-height: 299px;
   }
 
   .promotion__item {

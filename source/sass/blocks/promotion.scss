@@ -12,6 +12,7 @@
   gap: 20px 40px;
   justify-content: center;
   align-items: stretch;
+  align-content: stretch;
 
   @include vp-tablet {
     flex-wrap: wrap;
@@ -48,7 +49,7 @@
 
 
 .promotion__main {
-  align-self: flex-start;
+  align-self: stretch;
 }
 
 .promotion__main-wrapper {
@@ -154,19 +155,19 @@
 
     @include vp-tablet {
       min-width: 399px;
-      height: 462px;
+      min-height: 462px;
     }
 
     @include vp-mobile {
       min-width: 100%;
-      max-height: 500px;
-      height: calc(100vw - 21px);
+      min-height: 299px;
     }
   }
 }
 
 .promotion__info {
   flex-grow: 1;
+  align-self: stretch;
 }
 
 .promotion__list {
