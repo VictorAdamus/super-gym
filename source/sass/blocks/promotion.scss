@@ -230,6 +230,7 @@
     letter-spacing: 0.05em;
     font-size: 12px;
     line-height: 14px;
+    padding-top: 10px;
     outline-color: $color-default-black;
 
     @include hover-focus {
@@ -237,6 +238,7 @@
     }
 
     @include vp-mobile {
+      padding-top: 0;
       margin: auto;
       margin-top: 24px;
     }

@@ -2755,6 +2755,7 @@ button,
   letter-spacing: 0.05em;
   font-size: 12px;
   line-height: 14px;
+  padding-top: 10px;
   outline-color: #102654;
 }
 
@@ -4277,6 +4278,7 @@ button,
   }
 
   .promotion__item a {
+    padding-top: 0;
     margin: auto;
     margin-top: 24px;
   }
