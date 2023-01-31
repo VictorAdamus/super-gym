@@ -1565,6 +1565,7 @@ button,
   gap: 20px;
   z-index: 5;
   max-width: 750px;
+  gap: 10px;
 }
 
 .header__tel-link {
@@ -2585,6 +2586,9 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .promotion__title {
@@ -2598,9 +2602,8 @@ button,
 }
 
 .promotion__main {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .promotion__main-wrapper {
@@ -2701,9 +2704,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 40px 0;
 }
 
@@ -3680,6 +3683,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 30px;
   }
 
@@ -3929,6 +3935,7 @@ button,
     margin-top: 25px;
     padding: 0;
     padding-right: 32px;
+    text-align: left;
   }
 
   .about__description p:first-child {
